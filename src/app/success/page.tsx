@@ -1,12 +1,18 @@
-import React from "react";
+"use client";
+import HeaderBack from "@components/HeaderBack";
+import StatusBar from "@components/StatusBar";
+import Success from "@components/Success";
 
-const SuccessPage: React.FC = () => {
+const page = () => {
   return (
     <div>
-      <h1>Success!</h1>
-      <p>Your operation was successful.</p>
+      <StatusBar />
+      <HeaderBack />
+      <main>
+        <Success />
+      </main>
     </div>
   );
 };
 
-export default SuccessPage;
+export default page;
