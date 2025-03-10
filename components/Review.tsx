@@ -24,7 +24,7 @@ const Review = ({ totalStars = 5 }) => {
         </p>
       </div>
       <div className="border mt-2 rounded-lg p-3">
-        <Image src={image.room3} alt="" width={335} height={180} />
+        <Image src={image.room3} alt="" className="w-[335] h-[180]" />
         <div className="mt-2 mb-2 flex space-x-1">
           {" "}
           {[...Array(totalStars)].map((_, index) => {

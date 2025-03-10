@@ -17,32 +17,32 @@ const MainProfile = () => {
       <div className="grid mt-2 gap-4 grid-cols-2 grid-rows-2">
         <CustomButton
           onClick={() => handleClick("/review")}
-          styles="border rounded-xl text-left font-bold p-2"
+          styles=""
           icon={image.listing}
           title="Your listing's"
         />
         <CustomButton
           onClick={() => handleClick("/review")}
-          styles="border rounded-xl text-left font-bold p-2"
+          styles=""
           icon={image.liked}
           title="Like's"
         />
         <CustomButton
           onClick={() => handleClick("/review")}
-          styles="border rounded-xl text-left font-bold p-2"
+          styles=""
           icon={image.booking}
           title="Your Booking's"
         />
         <CustomButton
           onClick={() => handleClick("/review")}
-          styles="border rounded-xl text-left font-bold p-2"
+          styles=""
           icon={image.agreement}
           title="Agreement Gen"
         />
       </div>
       <div className="flex flex-col items-center mt-4">
         <CustomButtonBottom
-          onClick={() => handleClick("/review")}
+          onClick={() => handleClick("/roommate")}
           styles=""
           icon={image.love}
           title="Review Room/Roommate"
@@ -69,11 +69,7 @@ const MainProfile = () => {
       <button className="border font-bold w-full h-10 justify-center rounded-lg mt-2 flex items-center">
         Logout
       </button>
-      <Image
-        className="fixed bottom-0 w-[360] mr-10"
-        src={image.bottomNav}
-        alt=""
-      />
+      <Image className="fixed bottom-0 w-[360] " src={image.bottomNav} alt="" />
     </div>
   );
 };

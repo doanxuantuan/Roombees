@@ -10,10 +10,8 @@ const Header = () => {
         ROOMBEES
       </h1>
       <Image
-        className="col-span-1 ml-[60]"
+        className="col-span-1 ml-[60] "
         src={image.message}
-        width={32}
-        height={32}
         alt="Message Icon"
       />
     </div>

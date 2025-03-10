@@ -1,22 +1,26 @@
+"use client";
 import image from "@assets/image";
 import Image from "next/image";
 import React from "react";
-
+import { useRouter } from "next/navigation";
 const Profile = () => {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push("/home");
+  };
   return (
     <div className=" ml-6 mr-6">
       <div className=" mt-2 rounded-lg p-1 flex items-center justify-start gap-2 border-[#FFEAAC] border">
-        <Image src={image.avatar} alt="" width={40} height={40} />
+        <Image
+          onClick={handleClick}
+          src={image.avatar}
+          alt=""
+          className="w-10 h-10"
+        />
         <h1 className="font-unicorn">Jhon snow</h1>
-        <Image src={image.male} alt="" width={16} height={16} />
+        <Image src={image.male} alt="" className="w-4 h-4" />
       </div>
-      <Image
-        className="mt-2"
-        src={image.banner}
-        width={350}
-        height={120}
-        alt=""
-      />
+      <Image className="mt-2 w-[350px] h-[120px]" src={image.banner} alt="" />
     </div>
   );
 };

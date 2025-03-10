@@ -4,7 +4,7 @@ import image from "@assets/image";
 const StatusBar = () => {
   return (
     <div>
-      <Image src={image.statusBar} width={390} height={47} alt="" />
+      <Image src={image.statusBar} className="w-[390px] h-[47px]" alt="" />
     </div>
   );
 };
